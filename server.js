@@ -8,7 +8,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.statusCode(200).send('Menu is ready to list menu')
+    res.send('Menu is ready to list menu')
 })
 
 app.use('/menu', middlewareForFood, menuRoute)
